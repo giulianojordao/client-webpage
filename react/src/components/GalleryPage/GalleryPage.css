@@ -1,0 +1,243 @@
+/* -------------------------------- */
+/* -------FOR MOBILE--------------- */
+/* -------------------------------- */
+
+.main_container {
+  width: 90%;
+  min-height: 500px;
+  margin: 0 auto;
+}
+
+.gallery_container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.gallery_container:first-child {
+  margin-top: 0;
+}
+
+.gallery_container h1 {
+  margin-bottom: 0;
+  padding: 10px 15px 0 15px;
+}
+
+.gallery_image_container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  height: 275px;
+  width: 275px;
+  margin: 10px 10px 8px 10px;
+  border-radius: 3px;
+  border: 1px solid lightgrey;
+  box-shadow: 2px 2px 10px lightgrey;
+}
+
+.gallery_image {
+  width: 100%;
+  height: 335px;
+  object-fit: cover;
+  /* background-position: 50% 25%;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+
+
+
+/* -------------------------------- */
+/* -------FOR DESKTOP-------------- */
+/* -------------------------------- */
+
+@media (min-width: 1060px) {
+  
+  .main_container {
+    width: 1060px;
+    min-height: 500px;
+    padding: 20px 50px;
+    margin: 0 auto;
+  }
+  
+  .gallery_container {
+    margin-top: 60px;
+    text-align: left;
+  }
+
+  .gallery_container h1 {
+    margin-bottom: 15px;
+    padding: 0 0 0 10px;
+  }
+
+  .gallery_image_container {
+    height: 300px;
+    width: 300px;
+    margin: 10px 10px 8px 10px;
+  }
+  
+  .gallery_image {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .gallery_image_black:hover  {
+    opacity: 0.5;
+  }
+  
+  .gallery_image_black {
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.5s ease;
+    border-radius: 3px;
+  }
+  
+  .modal_hide {
+    display: none;
+    opacity: 0.5;
+    transition: all 1.5s ease;
+  }
+  
+  .modal_show {
+    display: block;
+    opacity: 1;
+    transition: all 1.5s ease;
+  }
+  
+  /* The Black Modal background */
+  .modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: #240a19e0;
+    transition: all 1.5s ease;
+  }
+  
+  .modal_content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    margin: auto;
+    height: 700px;
+    width: 1000px;
+    border-radius: 5px;
+    padding: 20px;
+    transition: all 1.5s ease;
+  }
+
+  .modal_image_container {
+    text-align: center;
+  }
+  
+  .modal_image_container img {
+    max-height: 550px;
+    width: auto;
+    border-radius: 4px;
+  }
+  
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.6s ease;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #a8387a;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .cursor {
+    cursor: pointer
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  .next {
+    right: 20px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    color: #a8387a;
+  }
+  
+  .image_numbering {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 15px 0;
+    position: absolute;
+    top: 0;
+  }
+  
+  .caption_container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .thumbnails_container {
+    overflow-y: hidden;
+    overflow-x: auto;
+    text-align: center;
+    position: fixed;
+    white-space: nowrap; 
+    left: 50%;
+    bottom: 20px;
+    width: 1000px;
+    transform: translate(-50%, 0);
+  }
+  
+  .thumbnail_column {
+    overflow: hidden;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+  }
+  
+  .thumbnail {
+    opacity: 0.6;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .active,
+  .thumbnail:hover {
+    opacity: 1;
+  }
+  
+}

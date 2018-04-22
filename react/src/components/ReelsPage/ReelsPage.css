@@ -1,0 +1,61 @@
+/* -------------------------------- */
+/* -------FOR MOBILE--------------- */
+/* -------------------------------- */
+
+.reels_container {
+  width: 100%;
+  min-height: 500px;
+  text-align: center;
+}
+
+.reel_group {
+  display: block;
+}
+
+.reel_title {
+  display: block;
+  margin-bottom: 15px;
+  font-size: .8em;
+  padding: 0px 15px 0 20px;
+  text-align: left;
+}
+
+.primary_reel iframe, 
+.secondary_reels iframe {
+  padding: 20px 20px 10px 20px;
+  /* width: 299px; 
+  height: 168px; */
+  width: 100%;
+  height: auto;
+}
+
+
+/* -------------------------------- */
+/* -------FOR DESKTOP-------------- */
+/* -------------------------------- */
+
+@media (min-width: 800px) {
+  .reels_container {
+    text-align: center;
+  }
+
+  .reel_group {
+    display: inline-block;
+  }
+  
+  .reel_title {
+    display: none;
+  }
+  
+  .primary_reel iframe {
+    margin-bottom: 40px;
+    width: 840px; 
+    height: 472px;
+  }
+  
+  .secondary_reels iframe {
+    padding: 20px;
+    width: 560px; 
+    height: 315px;
+  }
+}

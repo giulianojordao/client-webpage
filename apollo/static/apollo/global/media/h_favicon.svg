@@ -1,0 +1,22 @@
+<svg width="152" height="152" viewBox="0 0 152 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Component</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(104 103)">
+<g id="Component">
+<g id="Ellipse">
+<use xlink:href="#path0_fill" transform="translate(-104 -103)" fill="#A8387A"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path1_fill" transform="translate(-104 -30)" fill="#A8387A"/>
+</g>
+<g id="H">
+<use xlink:href="#path2_fill" transform="translate(-66 -73)" fill="#FFFDFE"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 152 76C 152 117.974 117.974 152 76 152C 34.0264 152 0 117.974 0 76C 0 34.0264 34.0264 0 76 0C 117.974 0 152 34.0264 152 76Z"/>
+<path id="path1_fill" d="M 0 0L 76 0L 76 79L 0 79L 0 0Z"/>
+<path id="path2_fill" d="M 76 93L 56.7595 93L 56.7595 53.1429L 19.2405 53.1429L 19.2405 93L 0 93L 0 0L 19.2405 0L 19.2405 37.6854L 56.7595 37.6854L 56.7595 0L 76 0L 76 93Z"/>
+</defs>
+</svg>

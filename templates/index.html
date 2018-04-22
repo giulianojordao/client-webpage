@@ -1,0 +1,33 @@
+{% load render_bundle from webpack_loader %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116692477-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-116692477-1');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="Description" content="The official site for American Actress Hana Wu." />
+    <title>Hana Wu</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'apollo/global/media/h_favicon.svg' %}">
+    <link rel="stylesheet" href="{% static 'apollo/global/stylesheets/main.css' %}">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  </head>
+  <body>
+    <div id="root">
+      <div class="index-loading-spinner">
+        <span class="fas fa-circle-notch fa-pulse"></span>
+      </div>
+    </div>
+      {% render_bundle 'main' %}
+  </body>
+  <noscript>Your browser does not support JavaScript!</noscript>
+</html>

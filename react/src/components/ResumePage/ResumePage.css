@@ -1,0 +1,72 @@
+/* -------------------------------- */
+/* -------FOR MOBILE--------------- */
+/* -------------------------------- */
+
+.resume_container {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 500px;
+}
+
+.resume_container h1 {
+  padding-top: 10px;
+}
+
+.school {
+  font-size: 0.8em;
+  margin-bottom: 3px;
+}
+
+.degree {
+  font-family: 'Roboto-Thin', helvetica, arial, sans-serif;
+  font-size: 0.7em;
+}
+
+.resume_table {
+  margin: 40px 0;
+  width: 100%;
+}
+
+.resume_table th {
+  font-size: 0.9em;
+  text-align: left;
+  padding: 5px 0;
+  border-bottom: 1px solid black;
+} 
+
+.resume_table td {
+  width: 33.3333333%;
+  font-family: 'Roboto-Thin', helvetica, arial, sans-serif;
+  padding: 5px;
+  font-size: 0.5em;
+}
+
+tr:first-child td{
+  padding-top: 15px;
+}
+
+/* -------------------------------- */
+/* -------FOR DESKTOP-------------- */
+/* -------------------------------- */
+
+@media (min-width: 800px) {
+  .resume_container {
+    padding: 50px;
+    box-shadow: 2px 2px 12px grey;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+
+  .resume_container h1 {
+    padding-top: 0px;
+  }
+  
+  .school {
+    font-size: 0.9em;
+  }
+
+  .resume_table td {
+    font-size: 0.7em;
+  }
+
+}

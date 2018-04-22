@@ -1,0 +1,73 @@
+/* -------------------------------- */
+/* -------FOR MOBILE--------------- */
+/* -------------------------------- */
+
+.contact_container {
+  margin: 0 auto;
+  min-height: 470px;
+  width: 90%;
+  margin-top: 20px;
+}
+
+.inner_container {
+  margin: 0 0 30px 10px;
+}
+
+.info {
+  margin-left: 30px;
+}
+
+.contact_container h3 {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.inner_container h5 {
+  margin: 15px 0 10px 10px;
+  font-size: .8em;
+}
+
+.indent {
+  margin: 10px;
+}
+
+.address {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.city {
+  margin-left: 27px;
+}
+
+
+
+
+/* -------------------------------- */
+/* -------FOR DESKTOP-------------- */
+/* -------------------------------- */
+
+@media (min-width: 800px) {
+  .contact_container {
+    width: 500px;
+    padding: 50px;
+    box-shadow: 2px 2px 12px grey;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+
+  .contact_container h3 {
+    padding-top: 0px;
+    font-size: 1.3em;
+  }
+
+  .inner_container h5 {
+    font-size: 1em;
+  }
+  
+  .city {
+    margin-left: 33px;
+  }
+  
+}
